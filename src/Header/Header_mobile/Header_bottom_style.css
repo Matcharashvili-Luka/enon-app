@@ -1,0 +1,202 @@
+/* bottom bar */
+
+.bottom_bar_container{
+    display: flex;
+    justify-content: center;
+}
+
+.header_bottom_mobile_container .icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 60px;
+    width: 100%;
+    max-width: 550px;
+    box-shadow: 0px 0px 15px var(--spanish-gray);
+    border-radius: 10px 10px 0 0;
+    position: fixed;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.header_bottom_mobile_container .icons div{
+    text-align: center;
+    width: 40px;
+    position: relative;
+}
+
+.header_bottom_mobile_container .icons div i{
+    font-size: var(--fs-25);
+    color: var(--black);
+}
+
+.header_bottom_mobile_container .icons div .count{
+    background-color: var(--bittersweet);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: var(--white);
+    font-size: var(--fs-14);
+    position: absolute;
+    top: -10px;
+    right: -12px;
+}
+
+/* MENU */
+
+body{
+    position: relative;
+}
+
+.menu_container{
+    height: 100vh;
+    background-color: var(--white);
+    max-width: 320px;
+    width: 100%;
+    overflow-y: scroll;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 1s ease;
+}
+
+#open_menu_activated{
+    left: 0px;
+}
+
+#open_menu_deactivated{
+    left: -325px;
+}
+
+.menu_container .menu_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--fs-20);
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--cultured);
+}
+
+.menu_container .menu_header p{
+    font-weight: var(--fw-700);
+    color: var(--pink);
+}
+
+.menu_container .menu_header i{
+    color: var(--onyx);
+    cursor: pointer;
+}
+
+.menu_container ul li .header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_container ul li .header p{
+    font-size: 18px;
+}
+
+.menu_container ul li .header,
+.menu_container ul .one_click_link{
+    font-size: var(--fs-16);
+    font-weight: var(--fw-400);
+    border-bottom: 2px solid var(--cultured);
+    margin-top: 10px;
+    padding: 7px 0px;
+    cursor: pointer;
+}
+
+.menu_container ul li .header a,
+.menu_container ul .one_click_link a{
+    color: var(--black);
+}
+
+.menu_container ul li .detailed{
+    padding-left: 15px;
+    color: var(--spanish-gray);
+}
+
+.menu_container ul li .detailed ul li{
+    font-size: var(--fs-14);
+    margin: 5px 0px;
+    cursor: pointer;
+    transition: var(--transition-timing);
+}
+
+.menu_container ul li .detailed ul li:hover{
+    color: var(--onyx);
+}
+
+#active_detailed_menu ul{
+    visibility: visible;
+    max-height: 148px;
+    transition: .5s ease-in-out;
+}
+
+#deactive_detailed_menu ul{
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: .5s ease-in-out;
+}
+
+.hidden_plus,
+.hidden_minus{
+    display: none;
+    transition: .5s;
+}
+
+.shonw_plus,
+.shonw_minus{
+    display: block;
+    transition: .5s;
+}
+
+.header_bottom_mobile_select_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0px;
+}
+
+.language_select_container{
+    margin-top: 20px;
+}
+
+.header_bottom_mobile_social_icons_container .social_icons{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.header_bottom_mobile_social_icons_container .social_icons i{
+    margin: 0px 10px;
+    background-color: var(--cultured);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: var(--transition-timing);
+}
+
+.header_bottom_mobile_select{
+    width: 100px;
+}
+
+.header_bottom_mobile_social_icons_container .social_icons i:nth-child(1):hover{
+    color: #1448b7;
+}
+.header_bottom_mobile_social_icons_container .social_icons i:nth-child(2):hover{
+    color: #1DA1F2;
+}
+.header_bottom_mobile_social_icons_container .social_icons i:nth-child(3):hover{
+    color: #e4007d;
+}
+.header_bottom_mobile_social_icons_container .social_icons i:nth-child(4):hover{
+    color: #3b5998;
+}
