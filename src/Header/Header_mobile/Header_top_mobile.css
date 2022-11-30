@@ -1,0 +1,87 @@
+.header_top_mobile_container .first_row{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.header_top_mobile_container .first_row .shipping_sale{
+    font-size: var(--fs-13);
+    color: var(--silver);
+}
+
+.header_top_mobile_select_container select{
+    margin: 0px 10px;
+}
+
+.header_top_mobile_container .second_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-top: 2px solid var(--cultured);
+    border-bottom: 2px solid var(--cultured);
+}
+
+.header_top_mobile_container .second_row .logo label{
+    font-size: 40px;
+    font-weight: var(--fw-700);
+    padding: 0rem 2rem;
+    cursor: pointer;
+    color: var(--onyx);
+}
+
+.header_top_mobile_container .second_row .search_bar input{
+    padding: .5rem 1rem;
+    width: 300px;
+    border: 1px solid var(--cultured);
+    border-radius: 10px;
+}
+
+.header_top_mobile_container .second_row .search_bar input:focus{
+    outline: 1px solid var(--gray);
+}
+
+.header_top_mobile_container .second_row .search_bar{
+    position: relative;
+}
+
+.header_top_mobile_container .second_row .search_bar i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: var(--gray);
+}
+
+.header_top_mobile_container .first_row .header_top_mobile_select_container select{
+    outline: 1px solid var(--white);
+    border: none;
+    color: var(--silver);
+    font-size: var(--fs-13);
+}
+
+@media screen and (max-width: 570px) {
+    .header_top_mobile_container .first_row .header_top_mobile_select_container{
+        display: none;
+    }
+    .header_top_mobile_container .second_row{
+        flex-direction: column;
+    }
+    .header_top_mobile_container .second_row .search_bar{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .header_top_mobile_container .second_row .search_bar input{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header_top_mobile_container .first_row{
+        display: none;
+    }
+    .header_top_mobile_container .second_row{
+        padding-top: .5rem;
+    }
+}

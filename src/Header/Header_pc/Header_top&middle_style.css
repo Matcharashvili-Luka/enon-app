@@ -1,0 +1,121 @@
+.header_pc_top_section{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+}
+
+.header_pc_top_section .social_icons i{
+    font-size: 20px;
+    color: var(--silver);
+    margin: 0px 10px;
+    background-color: var(--cultured);
+    padding: .3rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header_pc_top_section .social_icons i:nth-child(1):hover{
+    color: #1448b7;
+}
+.header_pc_top_section .social_icons i:nth-child(2):hover{
+    color: #1DA1F2;
+}
+.header_pc_top_section .social_icons i:nth-child(3):hover{
+    color: #e4007d;
+}
+.header_pc_top_section .social_icons i:nth-child(4):hover{
+    color: #3b5998;
+}
+
+.header_pc_top_section .shipping_sale p{
+    font-size: var(--fs-14);
+    color: var(--gray);
+}
+
+.header_pc_top_section .social_icons,
+.header_pc_top_section .select_container{
+    width: 250px;
+}
+
+.header_pc_top_section .select_container select{
+    margin: 0px 10px;
+    width: 100px;
+    outline: none;
+    border: none;
+    color: var(--silver);
+}
+
+
+/* middle section */
+
+.header_pc_middle_section_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    border-bottom: 2px solid var(--cultured);
+    border-top: 2px solid var(--cultured);
+}
+
+.header_pc_middle_section_container .logo,
+.header_pc_middle_section_container .user_icons{
+    width: 250px;
+}
+
+.header_pc_middle_section_container .logo{
+    font-size: 40px;
+    font-weight: var(--fw-700);
+    cursor: pointer;
+    color: var(--onyx);
+}
+
+.header_pc_middle_section_container .user_icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_pc_middle_section_container .user_icons i{
+    font-size: 32px;
+}
+
+.header_pc_middle_section_container .user_icons div{
+    position: relative;
+}
+
+.header_pc_middle_section_container .user_icons div .count{
+    font-size: 18px;
+    background-color: var(--bittersweet);
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--white);
+    position: absolute;
+    top: -10px;
+    right: -20px;
+}
+
+.header_pc_middle_section_container .search_bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.header_pc_middle_section_container .search_bar input{
+    font-size: var(--fs-16);
+    padding: .5rem 1rem;
+    width: 70%;
+    border: 2px solid var(--cultured);
+    border-radius: 10px;
+}
+
+.header_pc_middle_section_container .search_bar i{
+    font-size: var(--fs-20);
+    position: absolute;
+    color: var(--gray);
+    top: 13px;
+    right: calc(15% + 20px);
+}

@@ -161,18 +161,18 @@ function Header_bottom_mobile() {
                     <li className='header_bottom_mobile_select_container language_select_container'>
                         <a href="#">Language</a>
                         <select name="language" id="language" className='header_bottom_mobile_select'>
-                            <option value="eng">English</option>
-                            <option value="Spn">Spnanish</option>
-                            <option value="ger">German</option>
+                            <option value="english">English</option>
+                            <option value="spanish">Spnanish</option>
+                            <option value="german">German</option>
                         </select>
                     </li>
 
                     <li className='header_bottom_mobile_select_container'>
                         <a href="#">Currency</a>
                         <select name="currency" id="currency" className='header_bottom_mobile_select'>
-                            <option value="dollar">$ USD</option>
-                            <option value="Euro">€ EUR</option>
-                            <option value="ger">¥ Yen</option>
+                            <option value="usd">$ USD</option>
+                            <option value="euro">€ EUR</option>
+                            <option value="yen">¥ Yen</option>
                         </select>
                     </li>
 

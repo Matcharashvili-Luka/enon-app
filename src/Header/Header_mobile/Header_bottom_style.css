@@ -182,6 +182,7 @@ body{
     border-radius: 7px;
     cursor: pointer;
     transition: var(--transition-timing);
+    color: var(--silver);
 }
 
 .header_bottom_mobile_select{
