@@ -1,5 +1,6 @@
 .sliders_container{
-    width: 100vw;
+    max-width: 100vw;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }

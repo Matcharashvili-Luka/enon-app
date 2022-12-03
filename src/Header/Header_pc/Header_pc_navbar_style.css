@@ -1,6 +1,7 @@
 .header_pc_navbar_section_container{
     max-width: 950px;
     margin: 0px auto;
+    z-index: 111111;
 }
 
 .header_pc_navbar_section_container ul{
@@ -39,6 +40,7 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     padding: 1rem .5rem;
+    z-index: 11111;
 }
 
 .header_pc_navbar_section_container .sub_section ul li a{
@@ -58,7 +60,7 @@
 }
 
 .header_pc_navbar_section_container ul li:hover .sub_section{
-    display: block;
+    display: flex;
 }
 
 /* categories style */
@@ -84,6 +86,7 @@
 
 .header_pc_navbar_section_container .nav_section:hover .categories_sub_container{
     visibility: visible;
+    z-index: 11111;
 }
 
 .categories_sub_container ul li a{

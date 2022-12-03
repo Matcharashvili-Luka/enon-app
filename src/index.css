@@ -85,7 +85,7 @@ button{
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
     .pc_hidden{
         display: none;
     }

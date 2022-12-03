@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem 4rem;
+    max-width: 1300px;
 }
 
 .header_pc_top_section .social_icons i{
@@ -55,6 +56,7 @@
     padding: 1.5rem 6rem;
     border-bottom: 2px solid var(--cultured);
     border-top: 2px solid var(--cultured);
+    max-width: 1300px;
 }
 
 .header_pc_middle_section_container .logo,
@@ -118,4 +120,12 @@
     color: var(--gray);
     top: 13px;
     right: calc(15% + 20px);
+}
+
+
+@media screen and (min-width: 1300px){ 
+    .header_pc_top_section,
+    .header_pc_middle_section_container{
+        margin: 0px auto;
+    }    
 }
