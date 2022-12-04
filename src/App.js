@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './Header/Header';
+import Product from './Product/Product';
 import Sliders from './Sliders/Sliders';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <>
         <Header />
         <Sliders />
+        <Product />
       </>
     </div>
   );

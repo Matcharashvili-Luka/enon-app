@@ -24,7 +24,7 @@ function Main_slider(){
             pagination={{
                 clickable: true,
             }}
-            navigation={true}
+            navigation={false}
             modules={[Pagination, Navigation, Autoplay]}
             className="mySwiper"
             autoplay={{ 

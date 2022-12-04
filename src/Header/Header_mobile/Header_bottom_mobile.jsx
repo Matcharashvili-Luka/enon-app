@@ -21,7 +21,6 @@ function Header_bottom_mobile() {
         let clicking_on_same_element = false;
         if(detailed_menu_obj[current] == true){
             clicking_on_same_element = true;
-            console.log('opa');
         }
 
         if(!clicking_on_same_element) detailed_menu[current] = true;

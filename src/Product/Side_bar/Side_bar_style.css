@@ -1,0 +1,152 @@
+.side_bar_container{
+    width: 320px;
+    background-color: var(--white);
+    height: 100%;
+    position: sticky;
+    top: 30px;
+}
+
+.side_bar_container .categories{
+    width: 260px;
+    padding: 1.5rem 1rem;
+    background-color: var(--white);
+    margin-left: auto;
+    outline: 2px solid var(--cultured);
+    border-radius: 10px;
+}
+
+.side_bar_container .categories ul li .header{
+    font-size: var(--fs-16);
+}
+
+.side_bar_container .categories ul li .header p{
+    color: var(--silver);
+    line-height: 32px;
+    cursor: pointer;
+    transition: var(--transition-timing);
+}
+
+.side_bar_container .categories ul li .header p:hover{
+    color: var(--black);
+}
+
+.side_bar_container .categories ul li .header{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.side_bar_container .categories ul li .header .left_side{
+    display: flex;
+}
+
+.side_bar_container .categories ul li .header img{
+    width: 25px;
+    margin-right: 10px;
+}
+
+#deactive_detailed_category ul{
+    max-height: 0px;
+    overflow: hidden;
+    visibility: hidden;
+    transition: .5s ease-in-out;
+}
+
+#active_detailed_category ul{
+    max-height: 150px;
+    visibility: visible;
+    margin-top: 10px;
+    margin-left: 35px;
+    border-top: 1px solid var(--cultured);
+}
+
+.detailed_sidebar{
+    background-color: var(--white);
+}
+
+.detailed_sidebar ul li a{
+    color: var(--gray);
+    cursor: pointer;
+}
+
+.detailed_sidebar ul li a:hover{
+    color: var(--onyx);
+}
+
+
+/* Best Seller */
+
+
+.best_sellers_container{
+    width: 260px;
+    margin-left: auto;
+    margin-top: 30px;
+    background-color: var(--white);
+}
+
+.best_sellers_container .header p{
+    font-size: var(--fs-20);
+    color: var(--onyx);
+}
+
+.best_seller_element{
+    display: flex;
+    margin-top: 10px;
+    background-color: var(--white);
+}
+
+.best_seller_element .image{
+    width: 70px;
+    margin-right: 10px;
+}
+
+.best_seller_element .image img{
+    width: 100%;
+}
+
+.best_seller_element .text .price{
+    display: flex;
+    align-items: flex-end;
+}
+
+.best_seller_element .text .price .old_price{
+    font-size: var(--fs-14);
+    margin-right: 10px;
+    text-decoration: line-through;
+    color: var(--gray);
+}
+
+.best_seller_element .text .price .new_price{
+    color: var(--onyx);
+    font-weight: var(--fw-600);
+}
+
+.best_seller_element .text .name{
+    font-weight: 300;
+}
+
+.best_seller_element .yellow_star{
+    color: var(--brown);
+}
+
+.best_seller_element .gray_star{
+    color: var(--gray);
+}
+
+.best_seller_element .fa-star{
+    font-size: var(--fs-14);
+}
+
+.best_seller_element .text .stars{
+    margin: -3px 0px;
+}
+
+.best_seller_element{
+    cursor: pointer;
+    transition: var(--transition-timing);
+}
+
+.best_seller_element:hover{
+    transform: scale(1.05);
+}
