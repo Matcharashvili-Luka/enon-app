@@ -11,11 +11,11 @@ function Header_pc_middle_section() {
 					type="text"
 					placeholder='Enter your product name...'
 				/>
-				<i class="fa-solid fa-magnifying-glass"></i>
+				<i className="fa-solid fa-magnifying-glass"></i>
 			</div>
 			<div className="user_icons">
 				<div className="user">
-					<i class="fa-regular fa-user"></i>
+					<i className="fa-regular fa-user"></i>
 				</div>
 				<div className='heart'>
 					<i className="fa-regular fa-heart"></i>

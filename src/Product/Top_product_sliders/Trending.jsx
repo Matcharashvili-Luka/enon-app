@@ -12,24 +12,28 @@ import img8 from '../../assets/products/shoe-2.jpg'
 function Trending() {
     const product_left_data = [
         {
+            id: 1,
             src: img1,
             name: 'Running & Trekking Shoes - White',
             type: 'Sports',
             price: '49.00',
         },
         {
+            id: 2,
             src: img2,
             name: 'Running & Trekking Shoes - Black',
             type: 'Sports',
             price: '79.00',
         },
         {
+            id: 3,
             src: img3,
             name: 'Womens Party Wear Shoes',
             type: 'Party Wear',
             price: '94.00',
         },
         {
+            id: 4,
             src: img4,
             name: 'Sports Claw Shoes',
             type: 'Sports',
@@ -39,24 +43,28 @@ function Trending() {
 
     const product_right_data = [
         {
+            id: 5,
             src: img5,
             name: 'Air Trekking Shoes',
             type: 'Sports',
             price: '52.00',
         },
         {
+            id: 6,
             src: img6,
             name: 'Mens Boot With Suede Detail',
             type: 'Boots',
             price: '45.00',
         },
         {
+            id: 7,
             src: img7,
             name: 'Mens Leather Formal Wear Shoes',
             type: 'Formal',
             price: '94.00',
         },
         {
+            id: 8,
             src: img8,
             name: 'Casual Mens Brown Shoes',
             type: 'Casual',
@@ -73,7 +81,7 @@ function Trending() {
                 <div className="left_side">
                     {product_left_data.map((product) => {
                         return (
-                            <div className="single_new_arrival_product">
+                            <div className="single_new_arrival_product" key={product.id}>
                                 <div className="image">
                                     <img src={product.src} alt="" />
                                 </div>
@@ -89,7 +97,7 @@ function Trending() {
                 <div className="right_side">
                     {product_right_data.map((product) => {
                         return (
-                            <div className="single_new_arrival_product">
+                            <div className="single_new_arrival_product" key={product.name}>
                                 <div className="image">
                                     <img src={product.src} alt="" />
                                 </div>

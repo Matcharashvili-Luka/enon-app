@@ -150,3 +150,57 @@
 .best_seller_element:hover{
     transform: scale(1.05);
 }
+
+.side_bar_container .fa-xmark{
+    position: absolute;
+    top: 10px;
+    left: 240px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .side_bar_container{
+        width: 250px;
+    }
+    .side_bar_container .categories{
+        width: 230px;
+    }
+    .best_sellers_container{
+        width: 230px;
+    }
+    .best_seller_element .text .name{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 130px; 
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .side_bar_container{
+        width: 280px;
+        position: absolute;
+        padding: 40px 10px;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: 1111111;
+        overflow: auto;
+        overflow-y: scroll;
+        transition: 1s;
+    }
+
+    #close_category_menu{
+        left: -280px
+    }
+
+    #open_category_menu{
+        left: 0px
+    }
+
+    .side_bar_container .fa-xmark{
+        display: block;
+    }
+}

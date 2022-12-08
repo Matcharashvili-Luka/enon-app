@@ -30,7 +30,7 @@ function Header_top_mobile() {
                     type="text" 
                     placeholder='Enter your product name...'
                 />
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i className="fa-solid fa-magnifying-glass"></i>
             </div>
         </div>
     </div>

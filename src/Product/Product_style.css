@@ -1,9 +1,17 @@
 .product_container{
     display: flex;
+    justify-content: center;
 }
 
 .product_container .products_section_container{
-    width: calc(100vw - 400px);
-    margin-left: 30px;
-    height: 1000vh;
+    width: auto;
+    height: auto;
+    padding: 0px 30px;
+    background-color: var(--white);
 } 
+
+@media screen and (max-width: 1200px) {
+    .product_container .products_section_container{
+        padding: 0px 10px 0px 20px;
+    } 
+}

@@ -12,24 +12,28 @@ import img8 from '../../assets/products/jacket-6.jpg'
 function New_arrivals() {
     const product_left_data = [
         {
+            id: 1,
             src: img1,
             name: 'Relaxed Short Full Sleeve T-shirt',
             type: 'Clothes',
             price: '45.00',
         },
         {
+            id: 2,
             src: img2,
             name: 'Girls Pink Embro Design Top',
             type: 'Clothes',
             price: '61.00',
         },
         {
+            id: 3,
             src: img3,
             name: 'Black Floral Wrap Midi Skirt',
             type: 'Clothes',
             price: '76.00',
         },
         {
+            id: 4,
             src: img4,
             name: 'Pure Garment Dyed Cotton Shirt',
             type: 'Mens Fashion',
@@ -39,24 +43,28 @@ function New_arrivals() {
 
     const product_right_data = [
         {
+            id: 5,
             src: img5,
             name: 'Men Yarn Fleece Full-zip Jacket',
             type: 'Winter Wear',
             price: '89.00',
         },
         {
+            id: 6,
             src: img6,
             name: 'Mens Winter Leather Jacket',
             type: 'Winter Wear',
             price: '45.00',
         },
         {
+            id: 7,
             src: img7,
             name: 'Mens Winter Leather Jacket',
             type: 'Winter Wear',
             price: '45.00',
         },
         {
+            id: 8,
             src: img8,
             name: 'Men Yarn Fleece Full-zip Jacket',
             type: 'Winter Wear',
@@ -73,7 +81,7 @@ function New_arrivals() {
                 <div className="left_side">
                     {product_left_data.map((product) => {
                         return (
-                            <div className="single_new_arrival_product">
+                            <div className="single_new_arrival_product" key={product.id}>
                                 <div className="image">
                                     <img src={product.src} alt="" />
                                 </div>
@@ -89,7 +97,7 @@ function New_arrivals() {
                 <div className="right_side">
                     {product_right_data.map((product) => {
                         return (
-                            <div className="single_new_arrival_product">
+                            <div className="single_new_arrival_product" key={product.id}>
                                 <div className="image">
                                     <img src={product.src} alt="" />
                                 </div>

@@ -47,6 +47,7 @@
 
 .product_slider_element .text .sub_text{
     color: var(--bittersweet);
+    cursor: pointer;
 }
 
 .product_slider_element .quantity{

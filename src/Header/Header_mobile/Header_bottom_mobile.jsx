@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Header_bottom_style.css';
 
-function Header_bottom_mobile() {
+function Header_bottom_mobile({ set_open_category_menu }) {
     const[open_menu, set_open_menu] = useState(false);
     const[detailed_menu_obj, set_detailed_menu_obj] = useState({
         'men': false,
@@ -51,7 +51,10 @@ function Header_bottom_mobile() {
                         </div>
                     </div>
                     <div>
-                        <i className="fa-regular fa-circle"></i>
+                        <i 
+                            className="fa-regular fa-circle"
+                            onClick={() => set_open_category_menu(true)}
+                        ></i>
                     </div>
                 </div>
             </div>

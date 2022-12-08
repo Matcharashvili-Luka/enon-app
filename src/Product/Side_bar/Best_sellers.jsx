@@ -8,6 +8,7 @@ import bs_4 from '../../assets/products/4.jpg'
 function Best_sellers() {
     const best_seller_data = [
         {
+            id: 1,
             img: bs_1,
             text: 'Baby Fabric Shoes',
             oldPrice: '5.00',
@@ -15,6 +16,7 @@ function Best_sellers() {
             rating: 5,
         },
         {
+            id: 2,
             img: bs_2,
             text: "Men's Hoodie T-shirt",
             oldPrice: '17.00',
@@ -22,6 +24,7 @@ function Best_sellers() {
             rating: 5,
         },
         {
+            id: 3,
             img: bs_4,
             text: 'Woolen Hat',
             oldPrice: '15.00',
@@ -29,6 +32,7 @@ function Best_sellers() {
             rating: 4,
         },
         {
+            id: 4,
             img: bs_3,
             text: 'Girls T-shirt',
             oldPrice: '12.00',
@@ -40,7 +44,7 @@ function Best_sellers() {
     const return_yellow_stars = (qtn) => {
         let arr = [];
         for(let i = 1; i <= qtn; i++){
-            arr.push(<i class="fa-solid fa-star yellow_star"></i>);
+            arr.push(<i className="fa-solid fa-star yellow_star" key={i}></i>);
         }
         return arr;
     }
@@ -48,7 +52,7 @@ function Best_sellers() {
     const return_gray_stars = (qtn) => {
         let arr = [];
         for(let i = 1; i <= qtn; i++){
-            arr.push(<i class="fa-solid fa-star gray_star"></i>);
+            arr.push(<i className="fa-solid fa-star gray_star" key={i}></i>);
         }
         return arr;
     }
@@ -61,7 +65,7 @@ function Best_sellers() {
         <div className="products">
             {best_seller_data.map((element) => {
                 return(
-                    <div className="best_seller_element">
+                    <div className="best_seller_element" key={element.id}>
                         <div className="image">
                             <img src={element.img} alt="" />
                         </div>

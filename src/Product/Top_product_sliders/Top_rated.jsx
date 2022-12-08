@@ -12,24 +12,28 @@ import img8 from '../../assets/products/jewellery-1.jpg'
 function Top_rated() {
     const product_left_data = [
         {
+            id: 1,
             src: img1,
             name: 'Pocket Warch Leather Pounch',
             type: 'Watches',
             price: '50.00',
         },
         {
+            id: 2,
             src: img2,
             name: 'Silver Deer Heart Necklace',
             type: 'Jewellery',
             price: '84.00',
         },
         {
+            id: 3,
             src: img3,
             name: 'Titan 100 Ml Womens Perfume',
             type: 'Perfume',
             price: '42.00',
         },
         {
+            id: 4,
             src: img4,
             name: 'Mens Leather Brown Belt',
             type: 'Mens Fashion',
@@ -39,24 +43,28 @@ function Top_rated() {
 
     const product_right_data = [
         {
+            id: 5,
             src: img5,
             name: 'Platinium Zircon Classic Ring',
             type: 'Jewellery',
             price: '62.00',
         },
         {
+            id: 6,
             src: img6,
             name: 'Smart Warch Vital Plus',
             type: 'Watches',
             price: '56.00',
         },
         {
+            id: 7,
             src: img7,
             name: 'Shampoo Conditioner Packs',
             type: 'Cosmetics',
             price: '20.00',
         },
         {
+            id: 8,
             src: img8,
             name: 'Rose Gold Peacock Earrings',
             type: 'Jewellery',
@@ -73,7 +81,7 @@ function Top_rated() {
                 <div className="left_side">
                     {product_left_data.map((product) => {
                         return (
-                            <div className="single_new_arrival_product">
+                            <div className="single_new_arrival_product" key={product.id}>
                                 <div className="image">
                                     <img src={product.src} alt="" />
                                 </div>
@@ -89,7 +97,7 @@ function Top_rated() {
                 <div className="right_side">
                     {product_right_data.map((product) => {
                         return (
-                            <div className="single_new_arrival_product">
+                            <div className="single_new_arrival_product" key={product.src}>
                                 <div className="image">
                                     <img src={product.src} alt="" />
                                 </div>

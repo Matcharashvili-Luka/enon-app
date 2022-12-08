@@ -4,7 +4,7 @@
 }
 
 .top_product_slider{
-    width: 31%;
+    width: 280px;
 }
 
 .top_product_slider .products{
@@ -29,9 +29,7 @@
 }
 
 .single_new_arrival_product .image{
-    width: 80px;
     margin-right: 20px;
-    background-color: red;
     width: 80px;
     height: 80px;
 }
@@ -63,6 +61,106 @@
 }
 
 .single_new_arrival_product_price{
-    color: var(--bittersweet);
+    color: var(--pink);
     font-weight: var(--fw-500);
 }
+
+
+@media screen and (max-width: 1240px) {
+    .top_product_sliders_container{
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .single_new_arrival_product .image{
+        width: 70px;
+        height: 70px;
+    }
+    .top_product_slider{
+        width: 270px;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .top_product_slider{
+        width: 250px;
+    }
+    .single_new_arrival_product{
+        min-width: 240px;
+    }
+    .single_new_arrival_product_name{
+        width: 125px; 
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .top_product_slider{
+        width: 235px;
+    }
+    .single_new_arrival_product{
+        min-width: 225px;
+    }
+    .single_new_arrival_product_name{
+        width: 120px; 
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .top_product_slider{
+        width: 290px;
+    }
+    .single_new_arrival_product{
+        min-width: 285px;
+    }
+    .single_new_arrival_product_name{
+        width: 165px; 
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .top_product_sliders_container{
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 655px) {
+    .top_product_slider{
+        width: 90vw;
+    }
+    .single_new_arrival_product{
+        min-width: 84vw;
+    }
+    .single_new_arrival_product_name{
+        width: 300px; 
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .single_new_arrival_product_name{
+        width: 250px; 
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .single_new_arrival_product_name{
+        width: 200px; 
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .single_new_arrival_product_name{
+        width: 150px; 
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .single_new_arrival_product_name{
+        width: 100px; 
+    }
+}
+
+
+
